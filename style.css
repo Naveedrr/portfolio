@@ -1,0 +1,130 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --highlight-color: #ffeb00;
+  --button-gradient: linear-gradient(to right, #f12711, #f5af19);
+}
+
+[data-theme="dark"] {
+  --bg-color: #1e1e1e;
+  --text-color: #ffffff;
+  --highlight-color: #ffee00;
+  --button-gradient: linear-gradient(to right, #f5af19, #f12711);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+}
+
+.nav-link,
+.navbar-brand {
+  color: var(--text-color) !important;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.home-section,
+.about-section {
+  padding: 60px 0;
+  display: none;
+  position: relative;
+}
+
+.hello-box {
+  background: #b2f1f1;
+  border-radius: 20px;
+  padding: 6px 15px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+}
+
+.main-heading strong {
+  font-weight: bold;
+}
+
+.btn-orange {
+  background: var(--button-gradient);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.btn-black {
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  background: var(--highlight-color);
+  padding: 15px;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 250px;
+}
+
+.social-icons {
+  position: absolute;
+  top: 40%;
+  left: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-icons i {
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.theme-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  z-index: 1000;
+}
+
+.wave-img {
+  max-width: 100px;
+}
+
+.shape-bg {
+  width: 140px;
+  height: 140px;
+  background: var(--highlight-color);
+  border-radius: 50% 60% 70% 40%;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .social-icons {
+    left: 5px;
+    top: 50%;
+  }
+
+  .btn-orange,
+  .btn-black {
+    margin-bottom: 10px;
+  }
+}
