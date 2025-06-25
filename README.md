@@ -58,4 +58,3 @@ This is a simple personal portfolio website created by a fresher. It includes a 
 
 ---
 
-Feel free to extend this by adding Resume, Skills, or Projects sections!
